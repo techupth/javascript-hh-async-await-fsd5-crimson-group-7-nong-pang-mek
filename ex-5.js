@@ -12,3 +12,20 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+async function asyncChronousFunction() {
+  try {
+    const johnProfile = await getJohnProfile();
+    console.log(johnProfile);
+  } catch (error) {
+    console.log(error);
+  }
+}
+//const asyncChronousFunction = async () => {
+//try {
+// const johnProfile = await getJohnProfile();
+// console.log(johnProfile);
+// } catch (error) {
+//  console.log(error);
+//}
+//};
+asyncChronousFunction();

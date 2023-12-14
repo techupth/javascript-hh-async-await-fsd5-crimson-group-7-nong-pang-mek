@@ -33,3 +33,16 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+async function asyncChronousFunction() {
+  const johnProfile = await getJohnProfile();
+  console.log(johnProfile);
+  const johnOrders = await getJohnOrders();
+  console.log(johnOrders);
+}
+//const asyncChronousFunction = async () => {
+//const johnProfile = await getJohnProfile();
+//console.log(johnProfile);
+//const johnOrders = await getJohnOrders();
+// console.log(johnOrders);
+//};
+asyncChronousFunction();
